@@ -25,22 +25,23 @@ public static void main(String[] args) {
 
     switch (opcao) {
         case 1:
-            criar_conta();
+            conta suaConta = new conta(5555, 888888);
             break;
         case 2:
-            saldo();
+            System.out.println("Seu Saldo é de: " + suaConta.getSaldo());
             break;
         case 3:
-            limite();
+            double limite = 5000;
+            System.out.println("Seu limite é "+ suaConta.getLimite());
             break;
         case 4:
-            sacar();
+            Scanner sacar = new Scanner(System.in);
             break;
         case 5:
-            conta.deposito(double);
+            Scanner contadeposito = new Scanner(System.in);
             break;
         case 6:
-            transferir();
+            Scanner contatransferir =  new Scanner(System.in);
             break;
         case 7:
             sair();
@@ -54,29 +55,8 @@ public static void main(String[] args) {
     ler.close();
 }
 
-
-private static void criar_conta() {
-}
-
 private static void sair() {
 }
 
-private static void transferir() {
-}
 
-
-private static void deposito() {
-}
-
-
-private static void sacar() {
-}
-
-
-private static void limite() {
-}
-
-
-private static void saldo() {
-}
 }
