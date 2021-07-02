@@ -1,6 +1,6 @@
 public class conta {
 
-    public double saldo;
+    private double saldo;
     private int agencia;
     private int numero_conta; 
     private cliente_dados titular;
@@ -78,6 +78,10 @@ public class conta {
 
     public void Sair(){
         System.out.println("O atendimento séra finalizado!");
+    }
+
+    public String saldo(int i) {
+        return null;
     }  
     
 }
