@@ -1,18 +1,20 @@
 import java.util.Scanner;
+
+
 public class menu_conta {
 
     public static void menu(){
 
         System.out.println(" -------- Conta Bancária --------");
-		System.out.println("       1 - Saldo em conta        ");
-		System.out.println("       2 - Limite da conta       ");
-		System.out.println("       3 - Realizar saque        ");
-		System.out.println("       4 - Realizar depósito     ");
-		System.out.println("       5 - Realizar transferência");
-		System.out.println("       6 - Sair                  ");
+        System.out.println("       1 - Criar conta           ");
+		System.out.println("       2 - Saldo em conta        ");
+		System.out.println("       3 - Limite da conta       ");
+		System.out.println("       4 - Realizar saque        ");
+		System.out.println("       5 - Realizar depósito     ");
+		System.out.println("       6 - Realizar transferência");
+		System.out.println("       7 - Sair                  ");
 		System.out.println("       Digite uma dessas opções: ");
     }
-
 
 public static void main(String[] args) {
     int opcao = 0;
@@ -23,22 +25,26 @@ public static void main(String[] args) {
 
     switch (opcao) {
         case 1:
-            saldo();
+            criar_conta();
             break;
         case 2:
-            limite();
+            saldo();
             break;
         case 3:
-            sacar();
+            limite();
             break;
         case 4:
-            deposito();
+            sacar();
             break;
         case 5:
-            transferir();
+            conta.deposito(double);
             break;
         case 6:
-            sacar();
+            transferir();
+            break;
+        case 7:
+            sair();
+            System.out.println("Encerrando atendimento!");
             break;
     
         default:
@@ -48,6 +54,12 @@ public static void main(String[] args) {
     ler.close();
 }
 
+
+private static void criar_conta() {
+}
+
+private static void sair() {
+}
 
 private static void transferir() {
 }
