@@ -30,7 +30,7 @@ public class conta {
 
     public boolean sacar(double valor){
         if ((this.saldo + this.limite) < valor){
-            throw new RuntimeErrorException(    );
+            throw new RuntimeErrorException();
             } 
             else {            
             this.saldo-=valor;
