@@ -15,6 +15,12 @@ public class teste_banco{
         segConta.sacar(100);
         segConta.deposito(20);
 
+        try {
+            segConta.sacar(1);
+        } catch (RuntimeException e) {
+            System.out.println("Saldo não disponível. Limite insuficiente");
+        }
+
 
 
 

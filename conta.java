@@ -1,3 +1,5 @@
+import javax.management.RuntimeErrorException;
+
 public class conta {
 
     private double saldo;
@@ -24,8 +26,13 @@ public class conta {
         this.saldo+=valor;
     }
 
+///
+
     public boolean sacar(double valor){
-        if (this.saldo >= valor){
+        if ((this.saldo + this.limite) < valor){
+            throw new RuntimeErrorException(    );
+            } 
+            else {            
             this.saldo-=valor;
             return true;
         }
